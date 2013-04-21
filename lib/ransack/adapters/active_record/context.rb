@@ -17,9 +17,9 @@ module Ransack
           object.all
         end
 
-        def active_record(object)
-          base_klass
-        end
+#        def active_record(object)
+#          base_klass
+#        end
 
       end
     end
