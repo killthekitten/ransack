@@ -1,6 +1,6 @@
 module Ransack
   module Adapters
-    module BaseKlass #ActiveRecord
+    module ActiveRecord
       module Base
 
         def self.extended(base)
