@@ -6,7 +6,7 @@ gem 'rake'
 rails = nil # ENV['RAILS'] || '3-2-stable'
 
 gem 'arel'
-gem 'polyamorous', github: 'jonatack/polyamorous'
+gem 'polyamorous', github: 'jonatack/polyamorous', ref: '7e79c2aeb832109920a464097eaf524660b022f9'
 
 case rails
 when /\// # A path
