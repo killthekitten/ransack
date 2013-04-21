@@ -16,7 +16,7 @@ module Ransack
         end
 
         def relation_for(object)
-          object.scoped
+          object.all #scoped
         end
 
         def type_for(attr)
