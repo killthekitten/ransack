@@ -25,8 +25,8 @@ module Ransack
           name    = attr.arel_attribute.name.to_s
           table   = attr.arel_attribute.relation.table_name
 
-          schema_cache = @engine.connection.schema_cache
-          raise "No table named #{table} exists" unless schema_cache.table_exists?(table)
+          schema_cache = @engine.connection.schema_cache    
+          raise "No table named #{table} exists" unless schema_cache.table_exists?(table)  
           schema_cache.columns_hash[table][name].type
         end
 
@@ -73,19 +73,7 @@ module Ransack
           end
         end
 
-        def type_for(attr)
-          return nil unless attr && attr.valid?
-          name    = attr.arel_attribute.name.to_s
-          table   = attr.arel_attribute.relation.table_name
-
-          unless @engine.connection_pool.table_exists?(table)
-            raise "No table named #{table} exists"
-          end
-
-          @engine.connection_pool.columns_hash[table][name].type
-        end
-
-        private
+      private
 
         def get_parent_and_attribute_name(str, parent = @base)
           attr_name = nil
