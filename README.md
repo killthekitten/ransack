@@ -1,4 +1,15 @@
-# Ransack
+# Ransack - Edge Rails 4 only
+
+This version of Ransack is for Edge Rails 4 only.  Rails 3.x.x and Rails 4.0.0.beta1 are not supported.
+
+It includes compatibility with the Edge Rails commit of April 10, 2013 that broke previous versions of Ransack on the Rails 4 branch:
+
+821d7bd847eabe201779c39c4d8456434e53f28f
+"Merge pull request #10151 from neerajdotname/ar-to-klass changed variable name active_record => base_klass"
+
+English and French I18n files are included, as are the lastest pull requests on the [Ransack](https://github.com/ernie/ransack) gem.
+
+-
 
 [![Build Status](https://travis-ci.org/ernie/ransack.png?branch=master)](https://travis-ci.org/ernie/ransack)
 
