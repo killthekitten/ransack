@@ -1,12 +1,12 @@
 # Ransack - Edge Rails 4 only
 
-This version of Ransack is Edge Rails 4 only.  Rails 3.x.x and Rails 4.0.0.beta1 are not supported.
+This version of Ransack is [Edge Rails 4](https://github.com/rails/rails) only.  Rails 3.x.x and Rails 4.0.0.beta1 are not supported.
 
-It is compatible with the Edge Rails commit 821d7b of April 10, 2013 that broke previous versions of Ransack on the Rails 4 branch: "Merge pull request #10151 from neerajdotname/ar-to-klass changed variable name active_record => base_klass".
+It is compatible with the [Edge Rails commit 821d7b of April 10, 2013](https://github.com/rails/rails/commit/821d7bd847eabe201779c39c4d8456434e53f28f) that broke previous versions of Ransack on the Rails 4 branch.
 
 It requires [this Edge Rails compatible version of the Polyamorous gem](https://github.com/jonatack/polyamorous).
 
-I18n in English and in French ([commit 88c1ef](https://github.com/ernie/ransack/commit/88c1efbc92e27b6d1e95338fe1bfeb920c6f86e0) by ldavin / Louis Davin) is included as are some of the lastest pull requests on the main [Ransack](https://github.com/ernie/ransack) gem.
+I18n in English and in French ([commit 88c1ef](https://github.com/ernie/ransack/commit/88c1efbc92e27b6d1e95338fe1bfeb920c6f86e0) by ldavin / Louis Davin) is included, as are some of the lastest pull requests on the main [Ransack](https://github.com/ernie/ransack) gem.
 
 -
 
