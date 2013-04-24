@@ -34,7 +34,7 @@ module Ransack
           viz = Visitor.new
           relation = @object.where(viz.accept(search.base))
           if search.sorts.any?
-            relation = relation.except(:order).order(viz.accept(search.sorts))
+            relation = relation.except(:order).reorder(viz.accept(search.sorts))
           end
            opts[:distinct] ? relation.distinct : relation
 #           opts[:distinct] ? relation.uniq : relation
